@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>สมัครสมาชิก</title>
+  <link rel="stylesheet" href="/public/css/style.css" />
+</head>
+<body>
+  <div class="page">
+    <div class="auth-card" style="max-width:520px;">
+      <div class="brand"><div class="brand-badge"></div><div><strong>ระบบบัญชีร้านค้า</strong><div class="small-note">สมัครสมาชิกเพื่อเริ่มต้นใช้งาน</div></div></div>
+      <h1 class="title">Register</h1>
+      <p class="subtitle">สร้างบัญชีร้านค้าใหม่ภายในไม่กี่วินาที</p>
+      <div id="toast" class="toast"></div>
+      <form id="registerForm" class="form-grid">
+        <div class="input-wrap"><label>ชื่อผู้ใช้</label><input type="text" name="username" required /></div>
+        <div class="input-wrap"><label>อีเมล</label><input type="email" name="email" required /></div>
+        <div class="input-wrap"><label>ชื่อร้าน</label><input type="text" name="storeName" required /></div>
+        <div class="input-wrap"><label>รหัสผ่าน</label><input type="password" name="password" required /></div>
+        <div class="input-wrap"><label>ยืนยันรหัสผ่าน</label><input type="password" name="confirmPassword" required /></div>
+        <button class="btn btn-primary" type="submit">สมัครสมาชิก</button>
+      </form>
+      <div class="auth-footer">มีบัญชีแล้ว? <a href="/login">เข้าสู่ระบบ</a></div>
+    </div>
+  </div>
+  <script src="/public/js/common.js"></script>
+  <script src="/public/js/auth.js"></script>
+</body>
+</html>

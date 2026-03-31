@@ -1,0 +1,10 @@
+[
+  {
+    "id": "7a799d70-7ae0-48ff-a008-0ee97731bce7",
+    "username": "demo",
+    "email": "demo@example.com",
+    "passwordHash": "$2a$10$nEAdhqv/9/v2dNMgekJIYurzcHCze0GxBmX/evG7bw9lUCugdKDcW",
+    "storeId": "ab0bcfbc-8af0-4af2-9fcd-92cea110bea1",
+    "createdAt": "2026-03-31T00:15:02.633Z"
+  }
+]

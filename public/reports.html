@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>รายงานสรุป</title>
+  <link rel="stylesheet" href="/public/css/style.css" />
+</head>
+<body>
+  <div class="page" style="align-items:flex-start;">
+    <div class="report-shell">
+      <div class="navbar">
+        <div class="store-brand-inline">
+          <img id="storeLogoHeader" class="store-header-logo hidden" alt="โลโก้ร้าน" />
+          <div>
+            <div class="small-note">รายงานภาพรวม</div>
+            <h1 class="title" style="margin:0;" id="storeNameHeading">Summary & Reports</h1>
+          </div>
+        </div>
+        <div class="nav-actions">
+          <a class="btn btn-ghost" href="/dashboard">Dashboard</a>
+          <a class="btn btn-ghost" href="/profile">โปรไฟล์ร้าน</a>
+          <button class="btn btn-primary" id="logoutBtn">ออกจากระบบ</button>
+        </div>
+      </div>
+
+      <section class="month-bar glass panel">
+        <div class="section-subtitle" style="margin-bottom:12px;">เลือกดูรายงานแยกตามเดือน</div>
+        <div id="monthTabs" class="month-tabs"></div>
+      </section>
+
+      <div id="reportSummary"></div>
+      <div class="chart-grid">
+        <section class="glass chart-card"><h2 class="section-title">Bar Chart รายรับรายเดือน</h2><canvas id="barChart"></canvas></section>
+        <section class="glass chart-card"><h2 class="section-title">Pie Chart รายรับ/ค่าใช้จ่าย</h2><canvas id="pieChart"></canvas></section>
+        <section class="glass chart-card" style="grid-column:1 / -1;"><h2 class="section-title">Line Chart แนวโน้มกำไร</h2><canvas id="lineChart"></canvas></section>
+      </div>
+    </div>
+  </div>
+  <script src="/public/js/common.js"></script>
+  <script src="/public/js/reports.js"></script>
+</body>
+</html>

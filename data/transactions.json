@@ -1,0 +1,30 @@
+[
+  {
+    "id": "81e34fe6-a504-4079-afd1-1f7fbece2cab",
+    "userId": "7a799d70-7ae0-48ff-a008-0ee97731bce7",
+    "storeId": "ab0bcfbc-8af0-4af2-9fcd-92cea110bea1",
+    "date": "2026-03-28",
+    "itemName": "เสื้อยืด",
+    "quantity": 3,
+    "price": 250,
+    "expense": 120,
+    "note": "ขายผ่านไลฟ์สด",
+    "type": "income",
+    "profit": 630,
+    "createdAt": "2026-03-31T00:15:02.633Z"
+  },
+  {
+    "id": "50afa5ea-f12b-44d3-96ae-8e36e96f9521",
+    "userId": "7a799d70-7ae0-48ff-a008-0ee97731bce7",
+    "storeId": "ab0bcfbc-8af0-4af2-9fcd-92cea110bea1",
+    "date": "2026-03-29",
+    "itemName": "ค่ากล่องพัสดุ",
+    "quantity": 1,
+    "price": 0,
+    "expense": 80,
+    "note": "อุปกรณ์แพ็กของ",
+    "type": "expense",
+    "profit": -80,
+    "createdAt": "2026-03-31T00:15:02.633Z"
+  }
+]

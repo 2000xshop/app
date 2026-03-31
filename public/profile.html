@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>โปรไฟล์ร้าน</title>
+  <link rel="stylesheet" href="/public/css/style.css" />
+</head>
+<body>
+  <div class="page" style="align-items:flex-start;">
+    <div class="profile-shell">
+      <div class="navbar">
+        <div>
+          <div class="small-note">ตั้งค่าร้านค้า</div>
+          <h1 class="title" style="margin:0;">โปรไฟล์ร้าน</h1>
+        </div>
+        <div class="nav-actions">
+          <a class="btn btn-ghost" href="/dashboard">Dashboard</a>
+          <a class="btn btn-ghost" href="/reports">รายงาน</a>
+          <button class="btn btn-primary" id="logoutBtn">ออกจากระบบ</button>
+        </div>
+      </div>
+
+      <section class="glass panel" style="max-width:760px;">
+        <div id="toast" class="toast"></div>
+        <h2 class="section-title">ปรับแต่งร้านของคุณ</h2>
+        <p class="section-subtitle">เปลี่ยนชื่อร้าน โลโก้ สีปุ่มหลัก สีเรืองแสงเวลาเอาเมาส์ไปชี้ และพื้นหลังเว็บของร้านคุณ</p>
+        <form id="profileForm" class="form-grid" enctype="multipart/form-data">
+          <img id="logoPreview" class="logo-preview" alt="logo preview" />
+          <div class="input-wrap"><label>ชื่อร้าน</label><input id="storeName" name="storeName" type="text" required /></div>
+          <div class="input-wrap color-row">
+            <div>
+              <label>สีปุ่มหลัก</label>
+              <input id="buttonColor" name="buttonColor" type="color" />
+            </div>
+            <div>
+              <label>สีเรืองแสงเวลาเอาเมาส์ไปชี้</label>
+              <input id="glowColor" name="glowColor" type="color" />
+            </div>
+          </div>
+          <div class="input-wrap"><label>ความทึบพื้นหลัง</label><input id="backgroundOpacity" name="backgroundOpacity" type="range" min="0" max="1" step="0.05" /><div class="small-note">ความทึบปัจจุบัน: <span id="backgroundOpacityValue">72%</span></div></div>
+          <div class="input-wrap"><label>พื้นหลังเว็บ (อัปโหลดจากคอม/มือถือ)</label><input id="backgroundFile" name="backgroundFile" type="file" accept="image/gif,image/jpeg,image/png,image/webp" /></div>
+          <div class="input-wrap"><label>โลโก้ร้าน</label><input name="logo" type="file" accept="image/*" /></div>
+          <div id="backgroundPreviewBox" class="background-preview hidden"></div>
+          <button class="btn btn-primary" type="submit">บันทึกการเปลี่ยนแปลง</button>
+        </form>
+      </section>
+    </div>
+  </div>
+  <script src="/public/js/common.js"></script>
+  <script src="/public/js/profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>เข้าสู่ระบบ</title>
+  <link rel="stylesheet" href="/public/css/style.css" />
+</head>
+<body>
+  <div class="page">
+    <div class="auth-card">
+      <div class="brand"><div class="brand-badge"></div><div><strong>ระบบบัญชีร้านค้า</strong><div class="small-note">เข้าสู่ระบบเพื่อใช้งานต่อ</div></div></div>
+      <h1 class="title">Login</h1>
+      <p class="subtitle">จัดการยอดขาย ค่าใช้จ่าย และสรุปกำไรได้ในที่เดียว</p>
+      <div id="toast" class="toast"></div>
+      <form id="loginForm" class="form-grid">
+        <div class="input-wrap"><label>อีเมล</label><input type="email" name="email" placeholder="you@example.com" required /></div>
+        <div class="input-wrap"><label>รหัสผ่าน</label><input type="password" name="password" placeholder="********" required /></div>
+        <label class="remember-wrap">
+          <input type="checkbox" name="remember" id="rememberLogin" />
+          <span>จำอีเมลและรหัสผ่าน</span>
+        </label>
+        <div class="small-note">หากติ๊กไว้ ระบบจะจำข้อมูลบนอุปกรณ์นี้เพื่อให้ครั้งต่อไปไม่ต้องกรอกใหม่</div>
+        <button class="btn btn-primary" type="submit">เข้าสู่ระบบ</button>
+      </form>
+      <div class="auth-footer">ยังไม่มีบัญชี? <a href="/register">สมัครสมาชิก</a></div>
+    </div>
+  </div>
+  <script src="/public/js/common.js"></script>
+  <script src="/public/js/auth.js"></script>
+</body>
+</html>
